@@ -487,8 +487,8 @@ function App() {
 
       <footer className="border-t border-white/70 bg-white/60 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
-          <span>Tailor Investor Site</span>
-          <span>Built for GitHub Pages deployment.</span>
+          <span>Tailor</span>
+          <span>Modernizing the online shopping experience</span>
         </div>
       </footer>
     </div>
