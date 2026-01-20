@@ -1,4 +1,4 @@
-# Tailor Investor Site
+﻿# Tailor Investor Site
 
 Premium one-page investor site for Tailor. Built with Vite, React, TypeScript, and TailwindCSS for a fully static deploy.
 
@@ -13,19 +13,30 @@ npm run dev
 npm run build
 npm run preview
 ```
+Build output is generated in `docs/` for GitHub Pages.
 
-## GitHub Pages deployment (GitHub Actions)
-This repo includes a GitHub Actions workflow that builds the site and deploys the `dist` folder to GitHub Pages.
+## GitHub Pages deployment (main + /docs)
+This site is deployed with GitHub Pages from the `/docs` folder on the `main` branch.
 
-1) Set the repo to use GitHub Actions for Pages:
-   - GitHub repo settings → Pages → Source: "GitHub Actions".
-2) Push to the `main` branch.
-3) The workflow builds and deploys automatically.
+Steps:
+```bash
+npm install
+npm run build
+git add -A
+git commit -m "Rebuild docs"
+git push
+```
+
+GitHub settings:
+Repo Settings -> Pages -> Source: Deploy from a branch -> Branch: main -> Folder: /docs
+
+Site URL:
+https://robjevans.github.io/TailorDemo/
 
 ### Subpath hosting
 The Vite base path is set for subpath hosting:
 - Update `vite.config.ts` if your repo name changes.
-- Example: `base: "/tailor-investor-site/"`.
+- Example: `base: "/TailorDemo/"`.
 
 ## Demo video
 Place a local demo video at:
