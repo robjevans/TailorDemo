@@ -131,7 +131,7 @@ const founders = [
   {
     name: "Robbie Evans",
     role: "Co-founder (Strategy)",
-    bio: "Leads company strategy, investor relations, and the long-term vision for Tailor.",
+    bio: "Generates product vision, market strategy, and competitive positioning.",
     linkedin: "https://www.linkedin.com/in/robbie-evans-1426a5213/",
   },
   {
