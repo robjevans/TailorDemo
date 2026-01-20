@@ -17,31 +17,24 @@ type StatCard = {
 
 const stats: StatCard[] = [
   {
-    value: "$7.4T",
-    label: "Global retail ecommerce sales (2025F)",
-    subtext: "Forecast for 2025",
-    source: "Source: eMarketer (2025)",
+    value: "$7.4T (by 2025)",
+    label: "Global E-commerce Growth",
+    subtext: "8.3% annual growth",
+    source: "",
     icon: <span aria-hidden="true" />,
   },
   {
-    value: "20.5%",
-    label: "Ecommerce share of global retail (2025)",
-    subtext: "Projected share of total retail",
-    source: "Source: Shopify (citing eMarketer)",
+    value: "95% (online retail)",
+    label: "Digital Shift by 2040",
+    subtext: "vs. 5% physical stores",
+    source: "",
     icon: <span aria-hidden="true" />,
   },
   {
-    value: "2.77B",
-    label: "Online shoppers worldwide (2025)",
-    subtext: "Estimated global online shoppers",
-    source: "Source: eMarketer estimate (reported by Capital One Shopping)",
-    icon: <span aria-hidden="true" />,
-  },
-  {
-    value: "$779B",
-    label: "E-commerce apparel market (2025)",
-    subtext: "Market value (2025)",
-    source: "Source: Precedence Research",
+    value: "20.2% (of U.S. e-commerce)",
+    label: "Fashion Dominance",
+    subtext: "$1.2T globally by 2025",
+    source: "",
     icon: <span aria-hidden="true" />,
   },
 ];
@@ -265,10 +258,16 @@ function App() {
               A massive market with fragmented decision-making
             </h2>
             <p className="max-w-3xl text-base text-slate-600">
-              Shopping happens across dozens of tabs, reviews, and wishlists.
-              Tailor compresses the journey into a single side panel and a
-              unified dashboard, so shoppers stay confident and retailers see
-              higher intent conversion.
+              Why Now? The Market Vacuum
+              <br />
+              - Massive Digital Shift: Online shopping at all-time high with
+              2.7B digital buyers globally in 2025.
+              <br />
+              - Platform Fragmentation: No major platform uses AI to centralize
+              and personalize the end-to-end shopping experience.
+              <br />
+              - Ecosystem Lock-In: Amazon and Google focus on their own
+              ecosystems, leaving an opening for an agnostic assistant.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
