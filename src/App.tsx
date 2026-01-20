@@ -10,34 +10,39 @@ const navItems = [
 type StatCard = {
   value: string;
   label: string;
-  sublabel: string;
+  subtext: string;
   source: string;
+  icon: JSX.Element;
 };
 
 const stats: StatCard[] = [
   {
     value: "$7.4T",
-    label: "Global ecommerce sales",
-    sublabel: "8.3% annual growth",
-    source: "Source:",
+    label: "Global retail ecommerce sales (2025F)",
+    subtext: "Forecast for 2025",
+    source: "Source: eMarketer (2025)",
+    icon: <span aria-hidden="true" />,
   },
   {
-    value: "95%",
-    label: "Online shoppers",
-    sublabel: "vs. 5% physical stores",
-    source: "Source:",
+    value: "20.5%",
+    label: "Ecommerce share of global retail (2025)",
+    subtext: "Projected share of total retail",
+    source: "Source: Shopify (citing eMarketer)",
+    icon: <span aria-hidden="true" />,
   },
   {
-    value: "20.2%",
-    label: "Online apparel market",
-    sublabel: "$1.2T globally by 2025",
-    source: "Source:",
+    value: "2.77B",
+    label: "Online shoppers worldwide (2025)",
+    subtext: "Estimated global online shoppers",
+    source: "Source: eMarketer estimate (reported by Capital One Shopping)",
+    icon: <span aria-hidden="true" />,
   },
   {
-    value: "2.7B",
-    label: "Digital buyers",
-    sublabel: "digital buyers globally in 2025",
-    source: "Source:",
+    value: "$779B",
+    label: "E-commerce apparel market (2025)",
+    subtext: "Market value (2025)",
+    source: "Source: Precedence Research",
+    icon: <span aria-hidden="true" />,
   },
 ];
 
@@ -278,7 +283,7 @@ function App() {
                 <p className="mt-2 text-sm font-semibold text-slate-700">
                   {stat.label}
                 </p>
-                <p className="mt-1 text-xs text-slate-500">{stat.sublabel}</p>
+                <p className="mt-1 text-xs text-slate-500">{stat.subtext}</p>
                 <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
                   {stat.source}
                 </p>
