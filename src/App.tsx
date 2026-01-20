@@ -7,26 +7,37 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-const stats = [
+type StatCard = {
+  value: string;
+  label: string;
+  sublabel: string;
+  source: string;
+};
+
+const stats: StatCard[] = [
   {
-    value: "$X",
+    value: "$7.4T",
     label: "Global ecommerce sales",
-    note: "(TODO source)",
+    sublabel: "8.3% annual growth",
+    source: "Source:",
   },
   {
-    value: "Y%",
-    label: "Projected growth by 20ZZ",
-    note: "(TODO source)",
+    value: "95%",
+    label: "Online shoppers",
+    sublabel: "vs. 5% physical stores",
+    source: "Source:",
   },
   {
-    value: "Z%",
-    label: "Apparel share of ecommerce",
-    note: "(TODO source)",
+    value: "20.2%",
+    label: "Online apparel market",
+    sublabel: "$1.2T globally by 2025",
+    source: "Source:",
   },
   {
-    value: "$X",
-    label: "Annual spend per shopper",
-    note: "(TODO source)",
+    value: "2.7B",
+    label: "Digital buyers",
+    sublabel: "digital buyers globally in 2025",
+    source: "Source:",
   },
 ];
 
@@ -267,7 +278,10 @@ function App() {
                 <p className="mt-2 text-sm font-semibold text-slate-700">
                   {stat.label}
                 </p>
-                <p className="mt-1 text-xs text-slate-500">{stat.note}</p>
+                <p className="mt-1 text-xs text-slate-500">{stat.sublabel}</p>
+                <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
+                  {stat.source}
+                </p>
                 <span
                   className="mt-4 inline-flex h-1 w-10 rounded-full bg-slate-900/10 motion-safe:animate-fade-in"
                   style={{ animationDelay: `${index * 120}ms` }}
