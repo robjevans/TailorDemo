@@ -132,11 +132,13 @@ const founders = [
     name: "Robbie Evans",
     role: "Co-founder (Strategy)",
     bio: "Leads company strategy, investor relations, and the long-term vision for Tailor.",
+    linkedin: "https://www.linkedin.com/in/robbie-evans-1426a5213/",
   },
   {
     name: "Kayvan Movahedi",
     role: "Co-founder (Operations)",
     bio: "Owns operations, finance, and the systems that keep Tailor scaling cleanly.",
+    linkedin: "https://www.linkedin.com/in/kayvan-movahedi-b41394173/",
   },
   {
     name: "Maddalin Evans",
@@ -429,7 +431,18 @@ function App() {
               >
                 <div className="space-y-1">
                   <h3 className="font-display text-xl font-semibold text-slate-900">
-                    {founder.name}
+                    {founder.linkedin ? (
+                      <a
+                        href={founder.linkedin}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="transition hover:text-slate-700 hover:underline"
+                      >
+                        {founder.name}
+                      </a>
+                    ) : (
+                      founder.name
+                    )}
                   </h3>
                   <p className="text-sm font-semibold text-slate-600">
                     {founder.role}
