@@ -127,13 +127,18 @@ const steps = [
 const founders = [
   {
     name: "Robbie Evans",
-    role: "Co-founder (Product + Engineering)",
-    bio: "Product builder focused on elegant shopping workflows, data systems, and AI-driven personalization.",
+    role: "Co-founder (Strategy)",
+    bio: "Leads company strategy, investor relations, and the long-term vision for Tailor.",
+  },
+  {
+    name: "Kayvan Movahedi",
+    role: "Co-founder (Operations)",
+    bio: "Owns operations, finance, and the systems that keep Tailor scaling cleanly.",
   },
   {
     name: "Maddalin Evans",
-    role: "Co-founder (Strategy + Growth)",
-    bio: "Leads go-to-market strategy, partnerships, and the long-term platform vision for Tailor.",
+    role: "Co-founder (Marketing)",
+    bio: "Drives brand, growth, and community engagement across Tailor's launch markets.",
   },
 ];
 
