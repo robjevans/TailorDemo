@@ -10,38 +10,41 @@ const navItems = [
 type StatCard = {
   value: string;
   label: string;
-  subtext: string;
+  subtextLines: string[];
   source: string;
   icon: JSX.Element;
 };
 
 const stats: StatCard[] = [
   {
-    value: "$7.4T (by 2025)",
+    value: "$7.4T",
     label: "Global E-commerce Growth",
-    subtext: "8.3% annual growth",
+    subtextLines: ["by 2025", "8.3% annual growth"],
     source: "",
     icon: <span aria-hidden="true" />,
   },
   {
-    value: "95% (online retail)",
+    value: "95%",
     label: "Digital Shift by 2040",
-    subtext: "vs. 5% physical stores",
+    subtextLines: ["online retail", "vs. 5% physical stores"],
     source: "",
     icon: <span aria-hidden="true" />,
   },
   {
-    value: "20.2% (of U.S. e-commerce)",
+    value: "20.2%",
     label: "Fashion Dominance",
-    subtext: "$1.2T globally by 2025",
+    subtextLines: ["of U.S. e-commerce", "$1.2T globally by 2025"],
     source: "",
     icon: <span aria-hidden="true" />,
   },
   {
-    value: "2.7B",
-    label: "Digital Buyers Worldwide",
-    subtext: "Global online shoppers by 2025",
-    source: "",
+    value: "54%",
+    label: "Comparison Shopping",
+    subtextLines: [
+      "visit multiple websites",
+      "before deciding what/where to buy",
+    ],
+    source: "Source: Think with Google (Google/Ipsos)",
     icon: <span aria-hidden="true" />,
   },
 ];
@@ -294,7 +297,16 @@ function App() {
                 <p className="mt-2 text-sm font-semibold text-slate-700">
                   {stat.label}
                 </p>
-                <p className="mt-1 text-xs text-slate-500">{stat.subtext}</p>
+                {stat.subtextLines.map((line, lineIndex) => (
+                  <p
+                    key={`${stat.label}-${line}`}
+                    className={`text-xs text-slate-500${
+                      lineIndex === 0 ? " mt-1" : ""
+                    }`}
+                  >
+                    {line}
+                  </p>
+                ))}
                 <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
                   {stat.source}
                 </p>
