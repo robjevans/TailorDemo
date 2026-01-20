@@ -37,6 +37,13 @@ const stats: StatCard[] = [
     source: "",
     icon: <span aria-hidden="true" />,
   },
+  {
+    value: "2.7B",
+    label: "Digital Buyers Worldwide",
+    subtext: "Global online shoppers by 2025",
+    source: "",
+    icon: <span aria-hidden="true" />,
+  },
 ];
 
 const steps = [
