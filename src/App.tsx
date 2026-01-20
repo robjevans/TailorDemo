@@ -451,9 +451,9 @@ function App() {
                 <p className="text-sm text-slate-600">{founder.bio}</p>
                 <a
                   className="text-sm font-semibold text-slate-700 transition hover:text-slate-900"
-                  href="https://www.linkedin.com/"
+                  href={founder.linkedin ?? "https://www.linkedin.com/"}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                 >
                   LinkedIn
                 </a>
