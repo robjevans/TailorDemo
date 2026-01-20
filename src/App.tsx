@@ -44,7 +44,7 @@ const stats: StatCard[] = [
       "visit multiple websites",
       "before deciding what/where to buy",
     ],
-    source: "Source: Think with Google (Google/Ipsos)",
+    source: "",
     icon: <span aria-hidden="true" />,
   },
 ];
@@ -135,15 +135,15 @@ const founders = [
     linkedin: "https://www.linkedin.com/in/robbie-evans-1426a5213/",
   },
   {
+    name: "Maddalin Evans",
+    role: "Co-founder (Marketing)",
+    bio: "Drives brand, growth, and community engagement across Tailor's launch markets.",
+  },
+  {
     name: "Kayvan Movahedi",
     role: "Co-founder (Operations)",
     bio: "Owns operations, finance, and the systems that keep Tailor scaling cleanly.",
     linkedin: "https://www.linkedin.com/in/kayvan-movahedi-b41394173/",
-  },
-  {
-    name: "Maddalin Evans",
-    role: "Co-founder (Marketing)",
-    bio: "Drives brand, growth, and community engagement across Tailor's launch markets.",
   },
 ];
 
