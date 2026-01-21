@@ -211,7 +211,7 @@ function App() {
               </a>
               <a
                 className="btn-secondary"
-                href="https://github.com/placeholder/tailor"
+                href="https://github.com/robjevans/Tailor"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -423,13 +423,18 @@ function App() {
           <div className="flex flex-wrap gap-3">
             <a
               className="btn-primary"
-              href="https://github.com/placeholder/tailor"
+              href="https://github.com/robjevans/Tailor"
               target="_blank"
               rel="noreferrer"
             >
               Open GitHub repo
             </a>
-            <a className="btn-secondary" href="https://example.com/demo-download">
+            <a
+              className="btn-secondary"
+              href="https://github.com/robjevans/Tailor"
+              target="_blank"
+              rel="noreferrer"
+            >
               Download &amp; run demo
             </a>
           </div>
