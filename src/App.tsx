@@ -383,6 +383,30 @@ function App() {
           </div>
         </section>
 
+        <section className="scroll-mt-28 space-y-8">
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">
+              Growth Opportunity
+            </p>
+            <h2 className="font-display text-3xl font-semibold text-slate-900 md:text-4xl">
+              Expansion into beauty, technology, and homeware
+            </h2>
+          </div>
+          <figure className="glass-card overflow-hidden">
+            <img
+              className="h-full w-full object-cover"
+              src={`${baseUrl}growth-opportunity.png`}
+              alt="Tailor side-panel experience alongside search results"
+            />
+            <figcaption className="border-t border-white/70 bg-white/70 px-6 py-4 text-sm text-slate-600">
+              We envision Tailor being shopping companion expert across every
+              category, with AI-generated summaries and chat prompts generated
+              based on text input picked up on the web for every site. This is
+              how Tailor becomes a company and not just a product.
+            </figcaption>
+          </figure>
+        </section>
+
         <section id="github" className="scroll-mt-28 space-y-8">
           <div className="space-y-3">
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">
